@@ -1,3 +1,10 @@
-<p>
-  detalle-producto works!
-</p>
+<article   *ngFor="let producto of productos">
+      <div class="containerComp">
+        <img src={{producto.imagen_url}} class="img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{producto.producto}}</h5>
+          <p class="card-text">Precio: {{producto.precio}}</p>
+          <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+      </div>
+</article>

@@ -1,0 +1,7 @@
+<p>
+  lista-productos works!
+  <li *ngIf="authService.isLoggedIn">
+    <a (click)="authService.logout()">Logout</a>
+  </li>
+</p>
+<app-detalle-producto></app-detalle-producto>

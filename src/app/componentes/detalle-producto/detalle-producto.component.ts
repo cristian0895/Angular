@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-detalle-producto',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetalleProductoComponent implements OnInit {
 
-  constructor() { }
+  constructor(private api:ApiService) { }
+
+  public productos = []
+  public producto = ''
 
   ngOnInit() {
+    this.api.getProductos().subscribe(productos=>{
+      console.log('PRODUCTOS', productos);
+      this.productos = productos;
+    })
   }
 
 }

@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  
+  production: true,
+  firebase:{
+    apiKey: 'AIzaSyCi5hNLhA8o1KU7mjNNUicrV-FUE2l6K9w',
+    authDomain: 'paginawebcompras.firebaseapp.com',
+    databaseURL: 'https://paginawebcompras.firebaseio.com',
+    projectId: 'paginawebcompras',
+    storageBucket: 'paginawebcompras.appspot.com',
+    messagingSenderId: '761383313231'
+  }
 };
 
 /*

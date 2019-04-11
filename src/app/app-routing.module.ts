@@ -5,7 +5,7 @@ import { Page404Component } from './errors/page404/page404.component';
 import { LogoComponent } from './componentes/logo/logo.component';
 import { DetalleProductoComponent } from './componentes/detalle-producto/detalle-producto.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { ListaProductosComponent } from './componentes/lista-productos/lista-productos.component';
+import { ListaProductosComponent } from './componentes/admin/lista-productos/lista-productos.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { LoginComponent } from './users/login/login.component';
 import { RegisterComponent } from './users/register/register.component';
@@ -20,7 +20,7 @@ const routes: Routes = [
     component: LogoComponent
   },
   {
-    path:'',
+    path:'detalle-producto',
     component: DetalleProductoComponent
   },
   {
@@ -28,7 +28,7 @@ const routes: Routes = [
     component: FooterComponent
   },
   {
-    path:'',
+    path:'admin',
     component: ListaProductosComponent
   },
   {
@@ -36,7 +36,7 @@ const routes: Routes = [
     component: NavbarComponent
   },
   {
-    path:'',
+    path:'users/login',
     component: LoginComponent
   },
   {
